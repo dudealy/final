@@ -40,22 +40,23 @@
 							<header>
 								<h3>1. Separate excel worksheets (vaccines) to different CSVs</h3>
 							</header>
-									<p style="color: #5385c1">Some Text Here</p>
+									<p style="color: #5385c1">Our original dataset was one CSV and an Excel workbook with fourteen different worksheets
+											for each of the vaccines we analyzed. We separated each of these worksheets into multiple
+											CSV's in order to extract the data more easily.</p>
 							<div class="image fit">
-								<img src="images/etl/etl1.png" alt="Pic 01" />
+								<img src="images/etl/etl6edit.png" alt="Pic 01" />
 							</div>
 					
 						</article>
 						<article>
 							<header>
-								<h3>2. Concatenate Vaccine CSV's into one CSV</h3>
+								<h3>2. Create country specific vaccine dataframes</h3>
 							</header>
-								<p style="color: #5385c1">Some Text Here</p>
+								<p style="color: #5385c1">Created 195 dataframe, one for each country. This was a lot of leg work, but we need to do this in order to add the global region for each country.
+									</p>
 							<div class="image fit">
-								<img src="images/etl/etl2.png" alt="Pic 02" />
+								<img src="images/etl/etl1.png" alt="Pic 02" />
 							</div>
-
-
 						</article>
 					</div>
 				</div>
@@ -66,24 +67,23 @@
 		<section id="two" class="wrapper style1 special">
 			<div class="inner">
 				<div class="flex flex-2">
+						<article>
+							<header>
+								<h3>3. Seperate countries into their own CSVs and dataframes</h3>
+							</header>
+									<p style="color: white">Redundant work, but originally we were going to use 195 CSV's in order to account for population differences between countries within the same region.</p>	
+							<div class="image fit">
+								<img src="images/etl/etl4edit.png" alt="Pic 02" />
+							</div>
+						</article>
 					<article>
 						<header>
-							<h3>3. Separate Countries into separate Dataframe</h3>
-						</header>
-							<p style="color: white">Some Text Here</p>	
-						<div class="image fit">
-							<img src="images/etl/etl3edit.png" alt="Pic 01" />
-						</div>
-
-					</article>
-					<article>
-						<header>
-							<h3>4. Add Global Region Column to each Countries Dataframe</h3>
-						</header>
-								<p style="color: white">Some Text Here</p>	
-						<div class="image fit">
-							<img src="images/etl/etl4edit.png" alt="Pic 02" />
-						</div>
+								<h3>4. Add global region column to each country's dataframe</h3>
+							</header>
+								<p style="color: white">Added Global region Column to each countries dataframe in order to distinguish our data on a global basis</p>
+							<div class="image fit">
+								<img src="images/etl/etl5edit.png" alt="Pic 01" />
+							</div>
 					</article>
 				</div>
 		</section>
@@ -94,20 +94,20 @@
 						<div class="flex flex-2">
 							<article>
 								<header>
-									<h3>5. Separate countries into their own CSV's and Dataframe</h3>
+									<h3>5. Concatenate vaccines CSVs into one CSV</h3>
 								</header>
-									<p style="color: #5385c1">Some Text Here</p>
+									<p style="color: #5385c1">After cleaning we concatenated our dataframes into one large dataframe and exported it to one large CSV.</p>
 								<div class="image fit">
-									<img src="images/etl/etl5edit.png" alt="Pic 01" />
+									<img src="images/etl/etl2.png" alt="Pic 01" />
 								</div>
 							</article>
 							<article>
 								<header>
-									<h3>6. Create CSV's for each Region</h3>
+									<h3>6. Drop NaN data from dataframe</h3>
 								</header>
-									<p style="color: #5385c1">Some Text Here</p>
+									<p style="color: #5385c1">Created Nine Global regional CSV’s each containing all countries within that region, and the all fourteen vaccinations.</p>
 								<div class="image fit">
-									<img src="images/etl/etl6edit.png" alt="Pic 02" />
+									<img src="images/etl/etl3edit.png" alt="Pic 02" />
 								</div>
 							</article>
 						</div>
